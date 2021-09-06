@@ -3,7 +3,9 @@
 ## Contact information:
 
 :iphone: **Phone:** +375296415992
+
 :email: **E-mail:** serzhansergey96@gmail.com
+
 ![Telegram icon](/telegram-icon.png) **Telegram:** @sergeyserzhan
 
 ## About myself:
