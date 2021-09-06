@@ -6,7 +6,7 @@
 
 :email: **E-mail:** serzhansergey96@gmail.com
 
-![Telegram icon](/telegram-icon.png) **Telegram:** @sergeyserzhan
+![Telegram icon](/telegram-icon.png) **Telegram:** [@sergeyserzhan](https://t.me/sergeyserzhan)
 
 ## About myself:
 
