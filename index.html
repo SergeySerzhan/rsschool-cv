@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/agate.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Sergey Serzhan | RSSchool CV</title>
   </head>
   <body>
@@ -67,6 +70,65 @@
             experience but I am able to learn quickly and am good at problem
             solving.
           </p>
+        </section>
+
+        <section id="contacts">
+          <h2 class="heading-secondary">Skills</h2>
+
+          <div class="flex-wrapper">
+            <div class="skill-item">
+              <img src="html-5.svg" alt="HTML5 log" class="skill-logo">
+              <span class="skill-name">HTML5</span>
+            </div>
+            <div class="skill-item">
+              <img src="css-3.svg" alt="CSS3 logo" class="skill-logo">
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="skill-item">
+              <img src="js.svg" alt="JavaScript logo" class="skill-logo">
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="git.svg" alt="Git logo" class="skill-logo">
+              <span class="skill-name">Git</span>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="contacts">
+          <h2 class="heading-secondary">Code example</h2>
+          <p class="about-paragraph"><b>Human Readable Time:</b> Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)</p>
+          <pre><code class="javascript">
+            function humanReadable(seconds) {
+            let h, m, s;
+            const isLessThanTen = function (num) {
+              if (num < 10) return "0" + num;
+              else return num;
+            };
+            h = Math.floor(seconds / 3600);
+            seconds = seconds - h * 3600;
+            h = isLessThanTen(h);
+            m = Math.floor(seconds / 60);
+            s = seconds - m * 60;
+            m = isLessThanTen(m);
+            s = isLessThanTen(s);
+            return `${h}:${m}:${s}`;
+          }
+        </code></pre>
+        </section>
+
+        <section id="contacts">
+          <h2 class="heading-secondary">Education</h2>
+          <ul class="education">
+            <li class="education-item">HTML and CSS on <a class="education-link" href="https://developer.mozilla.org/ru/">MDN Web Docs</a> and <a class="education-link" href="https://youtube.com/">YouTube</a></li>
+            <li class="education-item">JavaScript <a class="education-link" href="https://www.udemy.com/course/the-complete-javascript-course/">Udemy course</a></li>
+          </ul>
+        </section>
+
+        <section id="contacts">
+          <h2 class="heading-secondary">English level</h2>
+          <p class="about-english">My english level is A2.</p>
         </section>
       </main>
     </div>
