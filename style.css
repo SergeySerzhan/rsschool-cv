@@ -23,6 +23,18 @@ html {
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%; /* 1rem = 9px */
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 45%; /* 1rem = 8px */
+  }
+}
+
 /*font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;*/
 
@@ -51,6 +63,13 @@ body {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    box-shadow: none;
+  }
+}
+
 .background {
   background: rgba(196, 196, 196, 0.3);
   border-radius: 15px;
@@ -60,10 +79,17 @@ body {
 /*----------------------------------------------------------------*/
 
 .header {
+  display: block;
   padding-top: 20px;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    display: none;
+  }
 }
 
 .header__nav {
@@ -110,8 +136,18 @@ body {
   align-items: center;
 }
 
+.flex-child {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-child {
+    width: 80%;
+  }
+}
+
 .photo {
-  width: 40%;
+  max-width: 90%;
   border-radius: 1.5rem;
 }
 
@@ -120,11 +156,25 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 768px) {
+  .contacts-div {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts-adaptive {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .heading-main {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #cecaca;
   font-size: 3.5rem;
+  line-height: 120%;
 }
 
 .heading-secondary {
@@ -154,6 +204,12 @@ body {
 
 .contacts-child img {
   margin-right: 7.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contacts-child img {
+    margin-right: 3.5rem;
+  }
 }
 
 .about-paragraph {
