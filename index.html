@@ -20,42 +20,41 @@
     <div class="container">
       <header class="header">
         <nav>
-          <ul class="header__nav">
-            <li class="header__nav-link">
-              <a href="#contacts">Contact information</a>
+          <ul class="header__nav background">
+            <li class="link"><a href="#contacts">Contact information</a>
             </li>
-            <li class="header__nav-link"><a href="#about">About myself</a></li>
-            <li class="header__nav-link"><a href="#skills">Skills</a></li>
-            <li class="header__nav-link"><a href="#code">Code example</a></li>
-            <li class="header__nav-link"><a href="#education">Education</a></li>
-            <li class="header__nav-link">
+            <li class="link"><a href="#about">About myself</a></li>
+            <li class="link"><a href="#skills">Skills</a></li>
+            <li class="link"><a href="#code">Code example</a></li>
+            <li class="link"><a href="#education">Education</a></li>
+            <li class="link">
               <a href="#english">English level</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="content">
-        <section id="contacts">
+      <main class="content background">
+        <section id="contacts" class="section">
           <h2 class="heading-secondary">Contact information:</h2>
-          <div class="flex-container">
+          <div class="flex-wrapper">
             <img src="/4G1A1005.jpg" alt="This is me!!!" class="photo" />
-            <div class="contacts-div">
+            <div class="contacts-div flex-wrapper flex-center">
               <h1 class="heading-main">Sergey Serzhan</h1>
 
-              <div class="phone typography">
+              <div class="contacts-child phone">
                 <img src="smartphone.svg" width="25px" height="25px" />
                 <span>+375296415992</span>
               </div>
 
-              <div class="email typography">
+              <div class="contacts-child email">
                 <img src="mail.svg" width="25px" height="25px" />
                 <span>serzhansergey96@gmail.com</span>
               </div>
 
-              <div class="telegram typography">
+              <div class="contacts-child telegram">
                 <img src="telegram.svg" width="25px" height="25px" />
-                <a class="telegram-link" href="https://t.me/sergeyserzhan"
+                <a class="link" href="https://t.me/sergeyserzhan"
                   >@sergeyserzhan</a
                 >
               </div>
@@ -63,7 +62,7 @@
           </div>
         </section>
 
-        <section id="contacts">
+        <section id="about" class="section">
           <h2 class="heading-secondary">About myself:</h2>
           <p class="about-paragraph">
             My goal is to develop in front-end development. I have no work
@@ -72,7 +71,7 @@
           </p>
         </section>
 
-        <section id="contacts">
+        <section id="skills" class="section">
           <h2 class="heading-secondary">Skills</h2>
 
           <div class="flex-wrapper">
@@ -96,7 +95,7 @@
 
         </section>
 
-        <section id="contacts">
+        <section id="code" class="section">
           <h2 class="heading-secondary">Code example</h2>
           <p class="about-paragraph"><b>Human Readable Time:</b> Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)</p>
           <pre><code class="javascript">
@@ -115,22 +114,40 @@
             s = isLessThanTen(s);
             return `${h}:${m}:${s}`;
           }
-        </code></pre>
+          </code></pre>
         </section>
 
-        <section id="contacts">
+        <section id="education" class="section">
           <h2 class="heading-secondary">Education</h2>
           <ul class="education">
-            <li class="education-item">HTML and CSS on <a class="education-link" href="https://developer.mozilla.org/ru/">MDN Web Docs</a> and <a class="education-link" href="https://youtube.com/">YouTube</a></li>
-            <li class="education-item">JavaScript <a class="education-link" href="https://www.udemy.com/course/the-complete-javascript-course/">Udemy course</a></li>
+            <li class="education-item">HTML and CSS on <a class="link" href="https://developer.mozilla.org/ru/">MDN Web Docs</a> and <a class="link" href="https://youtube.com/">YouTube</a></li>
+            <li class="education-item">JavaScript <a class="link" href="https://www.udemy.com/course/the-complete-javascript-course/">Udemy course</a></li>
           </ul>
         </section>
 
-        <section id="contacts">
+        <section id="english" class="section">
           <h2 class="heading-secondary">English level</h2>
           <p class="about-english">My english level is A2.</p>
         </section>
       </main>
+
+      <footer class="footer background">
+        <div class="flex-wrapper flex-center">
+          <div class="footer-child footer-github">
+            <a href="https://github.com/SergeySerzhan" class="footer-link">
+              <img src="github.svg" alt="Github logo" class="github-logo">
+            </a>
+          </div>
+
+          <span class="footer-year">2021</span>
+          
+          <div class="footer-child footer-rscourse">
+            <a href="https://rs.school/js/" class="footer-link">
+              <img src="rs_school_js.svg" alt="RSSchool logo" class="rsschool-logo">
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

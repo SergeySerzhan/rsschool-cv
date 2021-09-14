@@ -1,5 +1,4 @@
 :root {
-  --li-color: #fafafa;
   --heading-color: #ffffff;
 }
 
@@ -16,6 +15,7 @@ a:hover,
 a:visited {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 html {
@@ -51,6 +51,14 @@ body {
   padding: 1rem;
 }
 
+.background {
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 15px;
+}
+
+/* HEADER */
+/*----------------------------------------------------------------*/
+
 .header {
   padding-top: 20px;
   position: sticky;
@@ -64,34 +72,27 @@ body {
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 1.5rem;
   font-family: "Montserrat", sans-serif;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 600;
-  background: rgba(196, 196, 196, 0.3);
-  border-radius: 15px;
 }
 
-.header__nav-link {
-  cursor: pointer;
-  /* z-index: 100; */
-}
-
-.header__nav-link:hover {
+.link:hover {
   color: #b43939;
 }
+
+/* MAIN */
+/*----------------------------------------------------------------*/
 
 .content {
   width: 90%;
   margin: 4rem auto;
   padding-bottom: 4.5rem;
-  /* background-color: #ffffff; */
-  background: rgba(196, 196, 196, 0.3);
-  border-radius: 15px;
 }
 
-#contacts {
+.section {
   margin: 4.5rem auto;
   width: 90%;
   transform: translateY(3.5rem);
@@ -100,28 +101,26 @@ body {
   padding: 1.5rem;
 }
 
-.flex-container {
+.flex-wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+.flex-center {
+  align-items: center;
 }
 
 .photo {
   width: 40%;
   border-radius: 1.5rem;
-  margin: 1.5rem;
-  z-index: 1;
 }
 
 .contacts-div {
-  display: flex;
   width: 40%;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .heading-main {
-  /* font: 500 3.5rem "Montserrat, sans-serif"; */
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #cecaca;
@@ -132,7 +131,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   background-color: #545454;
-  color: #ffffff;
   font-size: 3rem;
   margin-left: 1.5rem;
   height: 3.5rem;
@@ -143,9 +141,8 @@ body {
   display: inline-block;
 }
 
-.typography {
+.contacts-child {
   font-size: 1.5rem;
-  color: #ffffff;
   width: 100%;
   display: flex;
   background: rgba(196, 196, 196, 0.35);
@@ -155,26 +152,14 @@ body {
   align-items: center;
 }
 
-.typography img {
+.contacts-child img {
   margin-right: 7.5rem;
-}
-
-.telegram-link:hover {
-  color: #b43939;
 }
 
 .about-paragraph {
   font-size: 2.5rem;
-  color: #ffffff;
-  /* padding: 1.5rem; */
   line-height: 120%;
   text-align: justify;
-}
-
-.flex-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .skill-logo {
@@ -186,7 +171,6 @@ body {
   display: block;
   text-align: center;
   font-size: 2.4rem;
-  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
@@ -207,11 +191,21 @@ body {
   line-height: 120%;
 }
 
-.education-link:hover {
-  color: #b43939;
-}
-
 .about-english {
   font-size: 2.5rem;
   padding-bottom: 1.5rem;
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.footer-child {
+  width: 5rem;
+}
+
+.footer-year {
+  font-size: 2.5rem;
 }
