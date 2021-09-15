@@ -57,17 +57,17 @@
               <h1 class="heading-main">Sergey Serzhan</h1>
 
               <div class="contacts-child phone">
-                <img src="smartphone.svg" width="25px" height="25px" />
+                <img src="smartphone.svg" width="25" height="25" alt="smartphone icon"/>
                 <span>+375296415992</span>
               </div>
 
               <div class="contacts-child email">
-                <img src="mail.svg" width="25px" height="25px" />
+                <img src="mail.svg" width="25" height="25" alt="email icon"/>
                 <span>serzhansergey96@gmail.com</span>
               </div>
 
               <div class="contacts-child telegram">
-                <img src="telegram.svg" width="25px" height="25px" />
+                <img src="telegram.svg" width="25" height="25" alt="telegram icon"/>
                 <a class="link" href="https://t.me/sergeyserzhan"
                   >@sergeyserzhan</a
                 >
@@ -119,7 +119,7 @@
             function humanReadable(seconds) {
             let h, m, s;
             const isLessThanTen = function (num) {
-              if (num < 10) return "0" + num;
+              if (num &lt; 10) return "0" + num;
               else return num;
             };
             h = Math.floor(seconds / 3600);
