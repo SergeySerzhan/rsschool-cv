@@ -24,14 +24,21 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav>
-          <ul class="header__nav background">
-            <li class="link"><a href="#contacts">Contact information</a></li>
-            <li class="link"><a href="#about">About myself</a></li>
-            <li class="link"><a href="#skills">Skills</a></li>
-            <li class="link"><a href="#code">Code example</a></li>
-            <li class="link"><a href="#education">Education</a></li>
-            <li class="link">
+        <nav class="header__nav background">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="header__list">
+            <li class="link menu__item">
+              <a href="#contacts">Contact information</a>
+            </li>
+            <li class="link menu__item"><a href="#about">About myself</a></li>
+            <li class="link menu__item"><a href="#skills">Skills</a></li>
+            <li class="link menu__item"><a href="#code">Code example</a></li>
+            <li class="link menu__item"><a href="#education">Education</a></li>
+            <li class="link menu__item">
               <a href="#english">English level</a>
             </li>
           </ul>
