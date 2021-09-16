@@ -368,6 +368,10 @@ body {
   text-align: justify;
 }
 
+.skill-adaptive {
+  list-style: none;
+}
+
 @media only screen and (max-width: 422px) {
   .skill-adaptive {
     flex-direction: column;
