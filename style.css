@@ -109,6 +109,11 @@ body {
   justify-content: space-between;
 }
 
+.header__link {
+  display: none;
+  width: 8rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .header__list {
     display: block;
@@ -139,6 +144,15 @@ body {
 
     color: #333;
     transition: all 0.3 ease;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__link {
+    display: inline-block;
   }
 }
 
@@ -352,6 +366,10 @@ body {
   font-size: 2.5rem;
   line-height: 120%;
   text-align: justify;
+}
+
+.skill-adaptive {
+  list-style: none;
 }
 
 @media only screen and (max-width: 422px) {
