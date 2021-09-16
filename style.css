@@ -109,6 +109,7 @@ body {
   justify-content: space-between;
 }
 
+
 .nav__link {
   display: none;
 }
@@ -149,6 +150,7 @@ body {
     color: #333;
     transition: all 0.3 ease;
   }
+
 
   .nav__link {
     display: block;
