@@ -109,12 +109,17 @@ body {
   justify-content: space-between;
 }
 
-.header__link {
+
+.nav__link {
   display: none;
-  width: 8rem;
 }
 
 @media only screen and (max-width: 1024px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header__list {
     display: block;
     position: fixed;
@@ -146,13 +151,10 @@ body {
     transition: all 0.3 ease;
   }
 
-  .header__nav {
-    display: flex;
-    justify-content: space-between;
-  }
 
-  .header__link {
-    display: inline-block;
+  .nav__link {
+    display: block;
+    width: 8rem;
   }
 }
 
